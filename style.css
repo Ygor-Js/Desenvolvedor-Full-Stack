@@ -1,0 +1,258 @@
+@keyframes bounce{
+    0%,20%,60%,100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40%{
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80%{
+        -webkit-transform: translateY(-10);
+        transform: translateY(-10);
+    }
+    }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    /*Formas de Como Remover a Barra de Rolagem Horizontal no Elementor
+    VIDEO:https://www.youtube.com/watch?v=SLcSlxTYOq0&ab_channel=DescomplicandoSites*/
+body, html {
+    overflow-x: hidden !important;
+    }
+    
+    /* Corrigir escrollamento*/
+    @media (max-width: 786px){
+    body, html {
+    overflow-x: hidden!important;
+    }
+    }
+
+body::-webkit-scrollbar{
+        width: 12px;
+        background-color: #202020;
+    }
+    
+body::-webkit-scrollbar-thumb{
+        background-color: #B7E3EF;
+        border-radius: 50px;
+        border: 0px solid white;
+    }
+    
+body::-webkit-scrollbar{
+        width: 0.7em;
+        background: #9d1753;
+    }
+body::-webkit-scrollbar-thumb{
+        background: -webkit-linear-gradient(transparent,#00008B);
+        background: linear-gradient(transparent,#00008B);
+        border-radius: 50px;
+}
+
+#menu ul{
+    position:fixed;
+    background-color:#F23DC2;
+    width: 100%;
+    line-height: 20px;
+    text-align: center;
+    
+    padding: 20px;
+}
+
+#menu li{
+    display: inline;
+    list-style: none;
+    font-size: 22px;
+    padding: 15px;
+}
+#menu a{
+    text-decoration: none;
+    color: #FFFDFF;
+}
+#menu a:hover{
+    color: #257AD4;
+}
+#inicio{
+    background-image: url(img/Pricipal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:100vh;
+}
+.conteiner{
+    position: relative;
+   background-color: #404040;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.conteiner h1{
+position: absolute;
+padding-top: 20px;
+color: white;
+}
+.conteiner form{
+    position: absolute;
+    padding-top: 60px;
+}
+.conteiner label{
+    color: rgb(237, 231, 231);
+}
+.conteiner button{
+    position: absolute;
+    left: 104px;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    border: solid 2px;
+    margin-top: 8px;
+}.efeito{
+    background-color: #F23DC2;
+}.efeito:hover{
+    background-color:#2594D9;
+ animation:bounce 1.5s;
+}
+.area{
+    border: solid 5px black;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 10px;
+    text-indent: 20px;
+    text-align: justify;
+    
+}
+.texto-1{
+    margin-top: 20vh;
+    margin-left: 40px; 
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 320px;
+    height: 400px;
+    font-size: 1.3rem;
+    background-color: #F266C1;
+}
+.texto-2{
+    margin-top: 20vh;
+    margin-left: 10vh;
+    margin-right: 15vh; 
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 320px;
+    height: 450px;
+    font-size: 1.2rem;
+    background-color: #F23DC2;
+}
+.texto-3{
+    margin-top: 20vh;
+    margin-right: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 320px;
+    height: 500px;
+    font-size: 1.2rem;
+    background-color: #2594D9;
+}
+#conhecimento{
+    background-color: #202020;
+    height: 100vh;
+    text-align: center;
+    padding-top: 1%;
+}
+#conhecimento p{
+        margin-top: 20px;
+        font-size: 1.5rem;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: justify;
+        text-indent: 30px;
+}
+#conhecimento h1{
+    padding-top: 10px;
+    font-size: 2rem;
+    color: rgb(240, 234, 234);
+}
+#conhecimento div{
+  border: 6px solid black;
+  border-radius: 30px;
+  margin-left: 25%;
+  margin-right: 25%;
+  height: 97%;
+  background-color: #808080;
+}
+#linguagens{
+  height: 100vh;
+  background-color: #404040;
+  text-align: center;
+}
+#linguagens h1{
+    font-size: 3rem;
+    padding-top: 30px;
+}
+#linguagens img{
+    width: 300px;
+    height: 180px;
+    padding: 20px;
+    margin: 30px;
+    border: 5px black solid ;
+    border-radius: 10px;
+}
+#formulario{
+    background-color: black;
+    color: white;
+    height: 60vh;
+    text-align: center;
+    font-size: 2rem;
+}
+#formulario input{
+    width: 300px;
+    height: 40px;
+    border: 3px solid ;
+    border-radius: 7px;
+    margin-top: 20px;
+}
+#formulario button{
+    width: 100px;
+    height: 50px;
+}
+
+footer{
+    background-color: rgb(20, 19, 19);
+    text-align: center;
+    padding-bottom: 48px; 
+}
+footer :hover{
+    background-color: #404040;
+}
+footer img{
+    width: 40px;
+    height: 60px;
+    position: absolute;
+}
+footer strong{
+    color: #85dbf3;
+}
+footer #cont{
+    color: rgb(212, 203, 203);
+    
+}
+footer span{
+    color: red;
+}
+footer #g{
+    color:green;
+}
+footer #b{
+    color: blue;
+}
+footer #a{
+    color: rgb(203, 61, 203);
+}
